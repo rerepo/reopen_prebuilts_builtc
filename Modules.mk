@@ -5,6 +5,8 @@ include $(CLEAR_VARS)
 
 LOCAL_PREBUILT_LIBS := libpreh:libpreh.a
 
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
+
 # NOTE: Can strip only shared libraries or executables
 #LOCAL_STRIP_MODULE := true
 
@@ -16,6 +18,8 @@ include $(CLEAR_VARS)
 LOCAL_PREBUILT_LIBS := libpret:libpret.so
 
 LOCAL_STRIP_MODULE := true
+
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 
 include $(BUILD_MULTI_PREBUILT)
 
